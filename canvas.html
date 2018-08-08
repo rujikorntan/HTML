@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML-CANVAS</title>
+    </head>
+    <body>
+        <canvas id='canvas' style='width:200px; height:200px; border:2px solid blue'  >Your browser does not support the HTML5 canvas tag.</canvas>
+        <canvas id='mygrd' style='width:200px; height:200px; border:2px solid blue'  >Your browser does not support the HTML5 canvas tag.</canvas>
+        <script>
+            var c = document.getElementById('canvas');
+            var ctx = c.getContext("2d");
+            /*Draw line*/
+            ctx.moveTo(0, 0);
+            ctx.lineTo(400, 200);
+            ctx.stroke();
+            /*Draw Circle*/
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+            /*Draw text*/
+            ctx.font="30px Arial"
+            ctx.strokeText('NULLT', 10, 50)
+            
+        </script> 
+
+        <script>
+            var c = document.getElementById('mygrd');
+            var ctx = c.getContext("2d");
+            /*Draw  Linear Gradient*/
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            // Create gradient
+            grd.addColorStop(0, 'red');
+            grd.addColorStop(1, 'white');
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
+
+        <p>Image to use:</p>
+        <img id="scream" src="img/fbicon.png" alt="The Scream" width="220" height="277">
+
+        <p>Canvas to fill:</p>
+        <canvas id="myCanvas" width="250" height="300" style="border:1px solid #d3d3d3;">  Your browser does not support the HTML5 canvas tag.</canvas>
+
+        <p><button onclick="myCanvas()">Try it</button></p>
+
+        <script>
+        function myCanvas() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("scream");
+            ctx.drawImage(img,10,10);
+        }
+         </script>
+    </body>
+</html>

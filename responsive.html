@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive-HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        <!--<img src='img/joystrick.png' style="width:100%">-->  <!-- ขยายเต็มจอ -->
+        <!--<img src='img/joystrick.png' style="max-width:100%">-->  <!-- หดตามขนาดอุปกรได้-->
+        <h2 style="font-size:3vw">Show Different Images Depending on Browser Width</h2> <!-- หดตาม browser-->
+        <picture>
+            <source srcset="img/joystrick.png" media="(max-width:600px)">
+            <source srcset="img/fbicon.png" media="(max-width:200px)">
+            <img src='img/fbicon.png' alt='facebook' style='width:auto'>     <!--ย่อแล้วรูปเปลี่ยน-->
+        </picture>
+
+        
+    </body>
+</html>

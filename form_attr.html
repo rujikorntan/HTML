@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form-attribute-HTML</title>
+    </head>
+    <body>
+        <form action="" target='_blank' method="POST" >
+            first name:<br>
+            <input type='text' name='firstname' value='Rujikorn' readonly ><br><br>
+            last name:<br>
+            <input type='text' name='lastname' value='Yoocharoensub' disabled><br><br>
+            Nickname:<br>
+            <input type='text' name='nickname' value='Tan' size='100' maxlength='3'><br><br>
+            Email:<br>
+            <input type='email' name='email' autocomplete='on' autofocus><br><br>
+
+            <input type='image' src="img/fbicon.png" width="400" height='400'><br><br>
+            
+            <input list="menu" >
+            <datalist id='menu'>
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br><br>
+            Country code: 
+            <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required>
+
+
+
+            <br><br>
+            <input type='submit' value="SUBMIT">
+            <input type='submit' value='SUBMIT2' formaction='https://www.w3schools.com/action_page.php' formmethod='GET' formnovalidate formtarget="_self">
+        </form>
+
+
+    </body>
+</html>

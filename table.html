@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table-HTML</title>
+        <style>
+            table, th, td {
+                border:1px solid black;
+                border-collapse: collapse;
+                padding:10px;
+                text-align:center;
+
+            }
+            table{
+                border-spacing: 15px;
+            }
+            #t01 th{
+                width:50%;
+                background-color:darkred;
+                color:white;
+            }
+            #t01 tr:nth-child(even){
+                background-color:darksalmon;
+            }
+            #t01 tr:nth-child(odd){
+                background-color:darkgray;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="font-size:20px"><b>Basic table html</b></p>
+        <table style="width:50%">
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>Rujikorn</td>
+                <td>Yoocharoensub</td>
+                <td>20</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>Puttitar</td>
+                <td>Yoocharoensub</td>
+                <td>22</td>
+                <td>female</td>
+            </tr>
+            <tr>
+                <td>Pramote</td>
+                <td>Yoocharoensub</td>
+                <td>50</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>Ratri</td>
+                <td>Yoocharoensub</td>
+                <td>49</td>
+                <td>female</td>
+            </tr>
+        </table>
+
+        <p style="font-size:20px"><b>Basic table html2</b></p>
+        <table style="width:50%" id="t01">
+            <caption style="font-family: 'Segoe UI'">Number of coffee shop sales </caption>
+            <tr>
+                <th rowspan="2">Menu</th>
+                <th colspan="2">size of cup(count)</th>
+            </tr>
+            <tr>
+                <th>15 Oz.</th>
+                <th>25 Oz.</th>
+            </tr>
+            <tr>
+                <td>Green tea</td>
+                <td>25</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>Coco</td>
+                <td>41</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Mocca</td>
+                <td>31</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

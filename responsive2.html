@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive2-HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        *{
+            box-sizing:border-box;
+        }
+        .left{
+            background-color:darkgoldenrod;
+            padding:20px;
+            float:left;
+            width:20%;
+        }
+        .main{
+            background-color: darkcyan;
+            padding:20px;
+            float:left;
+            width: 60%
+        }
+        .right{
+            background-color:darkred;
+            float:left;
+            padding:20px;
+            width: 20%;
+        }
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width:800px){
+            .left, .right, .main{
+                width:100%;
+            }
+        }
+        
+        </style>
+    </head>
+    <body>
+        <h2>Media Queries</h2>
+        <p>Resize the browser window. Make sure you reach the breakpoint at 800px when resizing this frame.Left Menu</p>
+
+        <div class='left'><p>Left Menu</p></div>
+        <div class='main'><p>Main Menu</p></div>
+        <div class='right'><p>Right Menu</p></div>
+
+    </body>
+</html>

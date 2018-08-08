@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>script-HTML</title>
+    </head>
+    <body>
+        <h2>My first Javascript</h2>
+        <p id="dateT"></p>
+        <button onclick="document.getElementById('dateT').innerHTML=Date()">Date and Time</button>
+
+
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById('demo').innerHTML = "Hello World";
+            document.getElementById('demo').style.fontSize = "25px";
+            document.getElementById('demo').style.color = "red";
+            document.getElementById('demo').style.backgroundColor = "Black";
+        </script>
+        <noscript>Sorry, ypur browser not support Javascript</noscript>
+        
+        <hr>
+        <img id="light1" src="img/pic_bulboff.gif" alt='light'>
+        <br>
+        <button onclick="light(1)">light On</button>
+        <button onclick="light(0)">light Off</button>
+
+        <script>
+            function light(sw){
+                if (sw==1){
+                    pic = "img/pic_bulbon.gif"
+                }else {
+                    pic = "img/pic_bulboff.gif"
+                }
+                document.getElementById('light1').src = pic;
+            }
+        </script>
+        <hr>
+
+    </body>
+</html>

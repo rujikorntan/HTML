@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        *{
+            box-sizing:border-box;
+        }
+        .menu{
+            float:left;
+            width:20%;
+            text-align:center;
+            background-color:rgb(151, 196, 233);
+            margin-top:7px
+        }
+        .menu a{
+            background-color:steelblue;
+            padding:15px;
+            color:white;
+            margin-top:7px;
+            display:block;
+            width:100%;
+        }
+        .main{
+            background-color:rgb(183, 192, 199);
+            color:black;
+            padding:60px;
+            width:59%;
+            float:left;
+            font-family: monospace;
+            margin-top:7px;
+            margin-left: 4px;
+            margin-right: 4px;
+
+        }
+        .right{
+            background-color:rgb(151, 196, 233);
+            text-align:left;
+            float:left;
+            color:green;
+            padding:12px;
+            width:20%;
+            height:135px;
+            margin-top:7px
+        }
+        .right p{
+            font-size:10px;
+        }
+        .feet{
+            background-color:blue;
+            color:white;
+            text-align:center;
+            width:100%;
+        }
+
+        @media only screen and (max-width:620px){
+            .menu, .main, .right{
+                width:100%
+            }
+        }
+        
+        </style>
+    </head>
+
+    <body style="font-family:fantasy">
+        <div style="background-color:darkblue;padding:15px;color:white;text-align:center">
+            <h1 style="font-size:50px"> Country</h1>
+        </div>
+        <div style="overflow:auto">
+            <div class='menu'>
+                <a href="#">Etymology and usage</a>
+                <a href="#">Sovereignty status</a>
+                <a href="#">See also</a>
+                <a href="#">Notes</a>
+                <a href="#">References</a>
+            </div>
+            <div class="main">
+                <h2>Country</h2>
+                <p>The word country comes from Old French contrée, which derives from Vulgar Latin (terra) contrata ("(land) lying opposite"; \
+                    "(land) spread before"), derived from contra ("against, opposite"). It most likely entered the English language after the Franco-Norman 
+                    invasion during the 11th century. In English the word has increasingly become associated with political divisions, 
+                    so that one sense, associated with the indefinite article – "a country" – through misuse and subsequent conflation is now a 
+                    synonym for state, or a former sovereign state, in the sense of sovereign territory or "district, native land".
+                </p>
+            </div>
+
+            <div class="right">
+                <ul style="list-style-type:square;font-family:'Lucida Sans Unicode';font-size:10px">
+                    <li>City network</li>
+                    <li>Constituent state</li>
+                    <li>List of sovereign states and dependent territories by continent</li>
+                    <li>Lists of countries and territories</li>
+
+                </ul>
+            </div>
+            <div class="right" style="font-family:'Lucida Sans Unicode';background-color:teal;color: white;">
+                <h2 >Sovereignty status</h2>
+                <p>The term "country" can refer to a sovereign state. There is no universal agreement on the number of "countries"</p>
+            </div>
+        </div>
+        <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">&copy; Created by nuuT</div>
+    </body>
+</html>
